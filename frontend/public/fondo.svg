@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1991" height="1403" viewBox="0 0 1991 1403">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.981" gradientTransform="translate(0.176 0.004) scale(0.648 0.992)" gradientUnits="objectBoundingBox">
+      <stop offset="0.274" stop-color="#84dc00"/>
+      <stop offset="0.433" stop-color="#7ed600"/>
+      <stop offset="0.645" stop-color="#6ec500"/>
+      <stop offset="0.885" stop-color="#54a900"/>
+      <stop offset="1" stop-color="#459a00"/>
+    </radialGradient>
+  </defs>
+  <g id="Grupo_12" data-name="Grupo 12" transform="translate(0 0.152)" opacity="0.83" style="mix-blend-mode: screen;isolation: isolate">
+    <rect id="Rectángulo_22" data-name="Rectángulo 22" width="1991" height="1403" transform="translate(0 -0.152)" fill="url(#radial-gradient)"/>
+    <rect id="Rectángulo_23" data-name="Rectángulo 23" width="1991" height="1403" transform="translate(0 -0.152)" fill="url(#radial-gradient)"/>
+  </g>
+</svg>

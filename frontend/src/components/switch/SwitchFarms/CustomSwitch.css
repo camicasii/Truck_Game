@@ -1,0 +1,22 @@
+.react-switch-handle {
+	height: 90% !important;
+	width: 75px !important;
+	border-radius: 40px !important;
+	top: 2px !important;
+	left: -10px !important;
+	box-shadow: none !important;
+	/* a visually faster function
+		cubic-bezier(0, 1.35, 1,-0.07) 
+	*/
+	transition: transform 2s cubic-bezier(0.43, 1.29, 0, -0.48) 0s !important;
+}
+
+.react-switch-handle-checked {
+	width: 40px !important;
+}
+
+.react-switch{
+	margin-top: -8px;
+--tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
