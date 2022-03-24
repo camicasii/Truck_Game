@@ -1,0 +1,29 @@
+{
+  "name": "event",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/event.js",
+  "scripts": {
+    "start": "node -r dotenv/config  build/event.js",
+    "dev": "nodemon -r dotenv/config  build/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "ethers": "^5.5.4",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.8",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.21"
+  }
+}
