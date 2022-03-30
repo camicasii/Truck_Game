@@ -4,7 +4,7 @@
   "description": "",
   "main": "build/event.js",
   "scripts": {
-    "start": "node -r dotenv/config  build/event.js",
+    "start": "node -r dotenv/config   build/app.js",
     "dev": "nodemon -r dotenv/config  build/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

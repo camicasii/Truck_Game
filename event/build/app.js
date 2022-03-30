@@ -54,7 +54,7 @@ app.get('/user/:address/w', function (req, res) {
 });
 app.listen(5000, () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield mongoose_1.default.connect("mongodb+srv://camicasii:159753@cluster0.e3btj.mongodb.net/myFirstDatabase", 
+        yield mongoose_1.default.connect("mongodb://root:example@mongo:27017/", //("mongodb+srv://camicasii:159753@cluster0.e3btj.mongodb.net/myFirstDatabase",
         //@ts-ignore
         { useNewUrlParser: true });
         yield (0, event_1.main)();

@@ -61,6 +61,7 @@ async function UserExchange(ws: any) {
   contractnft.on(
     "UserExchange",
     async (user_, amount_: BigNumber, nonce, timestamp, event) => {
+      console.log("UserExchange")
       console.log({
         user_,
         amount_: amount_.toHexString(),

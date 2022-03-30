@@ -47,7 +47,7 @@ app.get('/user/:address/w', async function (req, res) {
 
 app.listen(5000,async()=>{
   try {    
-    await mongoose.connect("mongodb+srv://camicasii:159753@cluster0.e3btj.mongodb.net/myFirstDatabase",
+    await mongoose.connect("mongodb://root:example@mongo:27017/",//("mongodb+srv://camicasii:159753@cluster0.e3btj.mongodb.net/myFirstDatabase",
       //@ts-ignore
       { useNewUrlParser: true }
     );

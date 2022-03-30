@@ -1,0 +1,47 @@
+version: '3.1'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    expose:
+      - 27017
+
+  mongo-express:
+    image: mongo-express
+    restart: always
+    ports:
+      - 8082:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: root
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+      ME_CONFIG_MONGODB_URL: mongodb://root:example@mongo:27017/
+
+
+  node1:
+    image: "node:14"
+    user: "node"
+    depends_on:
+      - mongo  
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+      - MNEMONIC=champion mutual success hurdle auction radio slogan hire print leave range number
+      - PRC_WS=wss://speedy-nodes-nyc.moralis.io/e42b3c0b4ce0b28a66394535/bsc/testnet/ws
+      - PRC_HTTP=https://speedy-nodes-nyc.moralis.io/e42b3c0b4ce0b28a66394535/bsc/testnet
+      - SWAP=0xa3FD2632882Df24898b7DF919Df3c77F9fFa09bA
+    volumes:
+      - ./event:/home/node/app
+    ports:
+      - 5000:5000
+    command: ["npm", "start"]
+  
+
+
+
+    # busd_test:"0x5584E306468DdF49a079bDEAdd0D873bAeD00248",
+    # PoolRewards:"0xD7742b92091C86B3720448a46f7e8E97176c8061",
+    # TruckGame:"0x4865ffe7996Db9bfEB72e9CE9B403995325BDd94"

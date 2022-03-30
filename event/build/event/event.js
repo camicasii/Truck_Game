@@ -65,6 +65,7 @@ function UserExchange(ws) {
         //@ts-ignore
         const contractnft = new ethers_1.ethers.Contract(address, abi_1.TruckGame, wallet);
         contractnft.on("UserExchange", (user_, amount_, nonce, timestamp, event) => __awaiter(this, void 0, void 0, function* () {
+            console.log("UserExchange");
             console.log({
                 user_,
                 amount_: amount_.toHexString(),
